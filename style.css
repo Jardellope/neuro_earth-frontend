@@ -1,16 +1,10 @@
 /* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Corpo */
 body {
-  background: #f5f5f5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
   color: #333;
-  line-height: 1.6;
+  text-align: center;
 }
 
 /* Navbar */
@@ -18,84 +12,61 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
+  background: #000;
   color: #fff;
-  padding: 15px 30px;
+  padding: 10px 20px;
 }
 
 .navbar .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
-.navbar img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-
-.navbar span {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #00e676;
+.navbar .logo img {
+  height: 40px;
+  margin-right: 10px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links li a {
+.nav-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s;
+  font-weight: bold;
 }
 
-.nav-links li a:hover {
-  color: #00e676;
+.nav-links a:hover {
+  color: #0f0;
 }
 
 /* Seções */
 section {
-  padding: 50px 20px;
-  text-align: center;
+  padding: 40px 20px;
 }
 
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #222;
-}
-
-section p {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-/* Contato */
-#contato {
-  background: #111;
-  color: #fff;
-}
-
-#contato h2 {
-  color: #00e676;
-}
-
-/* Botões */
-button, .btn {
-  padding: 10px 20px;
-  background: #00e676;
+h2 {
   color: #111;
+}
+
+#status {
+  font-weight: bold;
+}
+
+.btn {
+  background: #00ff99;
   border: none;
+  padding: 10px 20px;
+  font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
-button:hover, .btn:hover {
-  background: #00c853;
-  }
+.btn:hover {
+  background: #00cc77;
+}
