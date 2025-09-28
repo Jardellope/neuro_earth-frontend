@@ -1,0 +1,113 @@
+/* ---------- Reset básico ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background: url("https://i.ibb.co/3sVMsdd/neuro-earth-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  line-height: 1.6;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+header .logo h1 {
+  color: #00ffcc;
+  font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00ffcc;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00ffcc;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #00cc99;
+}
+
+/* ---------- Seções ---------- */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 20px 0;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  }
