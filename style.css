@@ -1,113 +1,101 @@
-/* ---------- Reset básico ---------- */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Corpo */
 body {
-  font-family: 'Arial', sans-serif;
-  color: white;
-  background: url("https://i.ibb.co/3sVMsdd/neuro-earth-bg.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: #f5f5f5;
+  color: #333;
   line-height: 1.6;
 }
 
-/* ---------- Cabeçalho ---------- */
-header {
-  background: rgba(0, 0, 0, 0.8);
-  padding: 15px 40px;
+/* Navbar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #111;
+  color: #fff;
+  padding: 15px 30px;
 }
 
-header .logo {
+.navbar .logo {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
-header .logo img {
-  width: 40px;
-  margin-right: 10px;
+.navbar img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
-header .logo h1 {
-  color: #00ffcc;
-  font-size: 22px;
+.navbar span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00e676;
 }
 
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  color: white;
+.nav-links li a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #00ffcc;
+.nav-links li a:hover {
+  color: #00e676;
 }
 
-/* ---------- Hero Section ---------- */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.hero h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #00ffcc;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  background: #00cc99;
-}
-
-/* ---------- Seções ---------- */
+/* Seções */
 section {
-  padding: 60px 20px;
+  padding: 50px 20px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
-  margin: 20px 0;
 }
 
 section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #00ffcc;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
 }
 
-/* ---------- Rodapé ---------- */
-footer {
-  background: rgba(0, 0, 0, 0.9);
-  padding: 20px;
-  text-align: center;
-  color: #aaa;
-  font-size: 14px;
+section p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Contato */
+#contato {
+  background: #111;
+  color: #fff;
+}
+
+#contato h2 {
+  color: #00e676;
+}
+
+/* Botões */
+button, .btn {
+  padding: 10px 20px;
+  background: #00e676;
+  color: #111;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover, .btn:hover {
+  background: #00c853;
   }
