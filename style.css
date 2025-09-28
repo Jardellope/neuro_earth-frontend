@@ -2,9 +2,10 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  background: linear-gradient(135deg, #e0f7fa, #f4f4f9);
   color: #333;
   text-align: center;
+  min-height: 100vh;
 }
 
 /* Navbar */
@@ -42,31 +43,45 @@ body {
 }
 
 .nav-links a:hover {
-  color: #0f0;
+  color: #00ff99;
 }
 
 /* Seções */
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 h2 {
   color: #111;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 #status {
   font-weight: bold;
 }
 
+/* Botão */
 .btn {
   background: #00ff99;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: #00cc77;
+  transform: scale(1.05);
 }
