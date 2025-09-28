@@ -1,3 +1,4 @@
+
 // Simulação de verificação de API
 document.addEventListener("DOMContentLoaded", () => {
   const statusEl = document.getElementById("status");
